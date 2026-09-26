@@ -6,7 +6,7 @@
 <title>LPU Online — Courses, Fees & Admission 2026 | OnlineSiksha</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0f1e3d; --navy-deep:#0a1330; --orange:#f2790f; --orange-d:#d9670a;
@@ -16,7 +16,7 @@
 }
 *{box-sizing:border-box;}
 html{scroll-padding-top:74px;}
-body{margin:0;background:#fff;color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.5;}
+body{margin:0;background:#fff;color:var(--ink);font-family:'Poppins',system-ui,sans-serif;line-height:1.5;}
 a{color:inherit;text-decoration:none;}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px;}
 
@@ -65,10 +65,16 @@ header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px s
 .lead-card .fine{font-size:10.8px;color:#94a0b8;text-align:center;margin-top:9px;line-height:1.4;}
 
 .stats{display:flex;flex-wrap:wrap;background:#fff;border:1px solid var(--line);border-radius:14px;margin-top:16px;overflow:hidden;}
-.stat{flex:1;min-width:150px;padding:16px 20px;border-right:1px solid var(--line);}
+.stat{flex:1;min-width:150px;padding:16px 20px;border-right:1px solid var(--line);display:flex;align-items:center;gap:12px;}
 .stat:last-child{border-right:none;}
-.stat b{display:block;font-size:19px;color:var(--ink);}
+.stat .ic{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.stat b{display:block;font-size:19px;}
 .stat span{font-size:12.3px;color:var(--slate);}
+.stat:nth-child(1){background:var(--green-bg);} .stat:nth-child(1) .ic{background:#c9ecd7;} .stat:nth-child(1) b{color:var(--green);}
+.stat:nth-child(2){background:var(--peach-pill);} .stat:nth-child(2) .ic{background:#fbd9b8;} .stat:nth-child(2) b{color:var(--orange-d);}
+.stat:nth-child(3){background:var(--chip);} .stat:nth-child(3) .ic{background:#dbe1f5;} .stat:nth-child(3) b{color:var(--navy);}
+.stat:nth-child(4){background:#fff6e0;} .stat:nth-child(4) .ic{background:#fbe8a8;} .stat:nth-child(4) b{color:#a9720a;}
+.stat:nth-child(5){background:#e4f7f2;} .stat:nth-child(5) .ic{background:#b8ecdd;} .stat:nth-child(5) b{color:#0f9d78;}
 
 .quick{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:16px;}
 @media (max-width:760px){ .quick{grid-template-columns:repeat(2,1fr);} }
@@ -166,6 +172,26 @@ table.data td.hl{color:var(--green);font-weight:700;}
 .course-head h2{margin:0 0 4px;font-size:20px;}
 .course-head p{margin:0;font-size:13px;color:var(--slate);}
 
+.link-text{color:#2563eb;font-weight:700;text-decoration:underline;cursor:pointer;}
+.link-text:hover{color:#1741c9;}
+.callout-news{background:var(--peach-bg);border-radius:12px;padding:16px 18px;margin-bottom:20px;}
+.callout-news h4{margin:0 0 4px;font-size:15px;}
+.callout-news p{margin:0;font-size:13.5px;color:#3a4358;}
+.toc{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
+@media (max-width:600px){ .toc{grid-template-columns:1fr;} }
+.toc a{color:var(--navy);font-size:13.3px;font-weight:600;}
+.toc a:hover{color:var(--orange);}
+.stat-callouts{display:flex;gap:14px;flex-wrap:wrap;margin:4px 0 16px;}
+.stat-callout{flex:1;min-width:140px;background:var(--chip);border-radius:10px;padding:14px;text-align:center;}
+.stat-callout b{display:block;font-size:20px;color:var(--navy);}
+.stat-callout span{font-size:12px;color:var(--slate);}
+.prog-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px;}
+.prog-card .row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:8px 0;font-size:12.6px;color:var(--slate);}
+.prog-card .row b{display:block;color:var(--ink);font-size:14px;}
+.prog-card .spec{font-size:13px;color:#3a4358;margin:8px 0;}
+.prog-card .btns{display:flex;gap:10px;margin-top:10px;}
+.prog-card .btns button{flex:1;}
+
 footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36px 0 20px;font-size:13.3px;border-radius:16px 16px 0 0;}
 .foot-grid{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between;}
 .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
@@ -207,7 +233,7 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
       <div class="hero-left">
         <div class="pill"><span class="dot"></span> NIRF #31 · NAAC A++ ACCREDITED</div>
         <div class="hero-top">
-          <div class="logo-box"><img src="logo.png" alt="LPU Online logo"></div>
+           <div class="logo-box"><img src="logo.png" alt="LPU Online logo"></div>
           <div>
             <h1>Lovely Professional University Online</h1>
             <div class="loc">Phagwara, Punjab · Private University · Est. 2005</div>
@@ -233,11 +259,11 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
   </section>
 
   <div class="stats">
-    <div class="stat"><b>NAAC A++</b><span>Accreditation</span></div>
-    <div class="stat"><b>#31</b><span>NIRF rank (university)</span></div>
-    <div class="stat"><b>12 courses</b><span>₹32K – ₹2L total fees</span></div>
-    <div class="stat"><b>4.5 ★</b><span>Learner rating</span></div>
-    <div class="stat"><b>90%</b><span>Placement rate</span></div>
+    <div class="stat"><div class="ic">🎓</div><div><b>NAAC A++</b><span>Accreditation</span></div></div>
+    <div class="stat"><div class="ic">🏅</div><div><b>#31</b><span>NIRF rank (university)</span></div></div>
+    <div class="stat"><div class="ic">📚</div><div><b>12 courses</b><span>₹32K – ₹2L total fees</span></div></div>
+    <div class="stat"><div class="ic">⭐</div><div><b>4.5 ★</b><span>Learner rating</span></div></div>
+    <div class="stat"><div class="ic">💼</div><div><b>90%</b><span>Placement rate</span></div></div>
   </div>
 
   <div class="quick">
@@ -257,88 +283,291 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
 
   <!-- OVERVIEW -->
   <section class="panel active" id="panel-overview">
-    <div class="section-head"><div class="eyebrow">Overview</div><h2>LPU Online highlights</h2><p>Runs on its own LMS — LPU e-Connect — with live classes, recorded lectures and a semester-based structure.</p></div>
-    <div class="block">
-      <table class="data"><thead><tr><th>Particular</th><th>Detail</th></tr></thead><tbody>
-        <tr><td>Online division</td><td>LPU Online</td></tr>
-        <tr><td>Establishment year</td><td>2005</td></tr>
-        <tr><td>Mode of study</td><td>Online, semester-based</td></tr>
-        <tr><td>Courses offered</td><td>MBA, BBA, MCA, BCA, BA and more</td></tr>
-        <tr><td>Recognised by</td><td>UGC-DEB, AICTE, NIRF, WES, WURI</td></tr>
-        <tr><td>Learning platform</td><td>LPU e-Connect (LMS)</td></tr>
-      </tbody></table>
+
+    <div class="callout-news">
+      <h4>📰 LPU Online Latest News and Updates</h4>
+      <p>LPU Online Admission 2026 is open for all its courses. Candidates must apply via the official website.</p>
     </div>
+
     <div class="block">
-      <h3>Eligibility & selection</h3>
-      <table class="data"><thead><tr><th>Course</th><th>Eligibility</th><th>Selection</th></tr></thead><tbody>
-        <tr><td>Online MBA</td><td>Bachelor's degree, any discipline</td><td>Merit-based</td></tr>
-        <tr><td>Online MCA</td><td>Bachelor's with Maths at 10/12/grad</td><td>Merit-based</td></tr>
-        <tr><td>Online BBA / BCA / BA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
-      </tbody></table>
-      <h3>Rankings & accreditations</h3>
-      <div class="badge-list">
-        <span class="badge green">NAAC A++ · 3.68/4.0</span>
-        <span class="badge chip">UGC-DEB entitled</span>
-        <span class="badge chip">WURI #4 in India</span>
-        <span class="badge chip">QS Asia #187</span>
-      </div>
-    </div>
-    <div class="block">
-      <h3>Placements</h3>
-      <table class="data"><thead><tr><th>Metric</th><th>Detail</th></tr></thead><tbody>
-        <tr><td>Average package</td><td>₹3 LPA – ₹5 LPA</td></tr>
-        <tr><td>Highest reported package</td><td class="hl">Up to ₹10 LPA</td></tr>
-        <tr><td>Hiring partners</td><td>2,225+ companies</td></tr>
-      </tbody></table>
-      <h3>Scholarships</h3>
-      <ul class="check-list">
-        <li><b>Jai Jawan Scholarship</b> — 100% tuition waiver for defence & paramilitary personnel</li>
-        <li><b>Student Grant</b> — ~20% fee concession for early applicants</li>
-        <li><b>Alumni Fee Waiver</b> — extra 10% off for LPU alumni</li>
+      <div class="section-head"><div class="eyebrow">Table of contents</div><h2>On this page</h2></div>
+      <ul class="toc">
+        <li><a href="#toc-highlights">LPU Online Highlights 2026</a></li>
+        <li><a href="#toc-fees">LPU Online Courses and Fees 2026</a></li>
+        <li><a href="#toc-programmes">LPU Online Popular Programmes</a></li>
+        <li><a href="#toc-eligibility">LPU Online Eligibility and Selection Criteria</a></li>
+        <li><a href="#toc-admission">LPU Online Admission Process 2026</a></li>
+        <li><a href="#toc-rankings">LPU Online Rankings and Accreditations</a></li>
+        <li><a href="#toc-placements">LPU Online Placements</a></li>
+        <li><a href="#toc-scholarships">LPU Online Scholarships</a></li>
+        <li><a href="#toc-campus">LPU Online Campus</a></li>
+        <li><a href="#toc-exam">LPU Online Examination Pattern</a></li>
+        <li><a href="#toc-degree">LPU Online Sample Degree</a></li>
+        <li><a href="#toc-dates">LPU Online Admission Important Dates</a></li>
+        <li><a href="#toc-reviews">LPU Online Reviews</a></li>
+        <li><a href="#toc-faqs">LPU Online FAQs</a></li>
       </ul>
     </div>
-    <div class="section-head"><div class="eyebrow">Reviews</div><h2>What learners say</h2></div>
-    <div class="review-grid" style="margin-bottom:24px;">
-      <div class="review-card"><div class="avatar">AS</div><p>"LMS was easy to use, helped me manage studies with work."</p><b>Aman Singh</b><span>Online learner</span></div>
-      <div class="review-card"><div class="avatar">SS</div><p>"Faculty support during sessions was responsive."</p><b>Sushma Sharma</b><span>Online learner</span></div>
-      <div class="review-card"><div class="avatar">KR</div><p>"Recorded lectures made revision flexible."</p><b>Kelvin Rao</b><span>Online learner</span></div>
-      <div class="review-card"><div class="avatar">KM</div><p>"Career guidance helped with interview prep."</p><b>Karan Malhotra</b><span>Online learner</span></div>
+
+    <div class="section-head" id="toc-highlights"><div class="eyebrow">Overview</div><h2>LPU Online Highlights 2026</h2><p>LPU online has its own Learning Management System (LMS). There are live online classes and interaction between the faculty and students. LPU Online follows a semester-based academic for online programmes. The LPU popular courses include Online MBA, Online BBA, Online MCA, and Online BCA and others.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Particulars</th><th>Details</th></tr></thead><tbody>
+        <tr><td>University Name</td><td>Lovely Professional University</td></tr>
+        <tr><td>Online Division</td><td>LPU Online</td></tr>
+        <tr><td>Establishment Year</td><td>2005</td></tr>
+        <tr><td>Location</td><td>Phagwara, Punjab</td></tr>
+        <tr><td>Mode of Study</td><td>Online</td></tr>
+        <tr><td>Courses Offered</td><td>MBA, BBA, MCA, BCA</td></tr>
+        <tr><td>Duration</td><td>2-3 Years</td></tr>
+        <tr><td>Eligibility</td><td>10+2 / Graduation</td></tr>
+        <tr><td>Recognised By</td><td>University Grants Commission (UGC)</td></tr>
+        <tr><td>Accreditation</td><td>NAAC A++</td></tr>
+        <tr><td>Academic Structure</td><td>Semester-based</td></tr>
+        <tr><td>Learning Platform</td><td>LPU e-Connect (LMS)</td></tr>
+        <tr><td>Examination Mode</td><td>Online</td></tr>
+        <tr><td>Official Website</td><td>lpuonline.com</td></tr>
+      </tbody></table>
     </div>
-    <div class="faq-section">
-      <div class="section-head"><div class="eyebrow">Help</div><h2>Frequently asked questions</h2></div>
-      <div class="faq-item"><button class="faq-q">Is the LPU Online degree valid for government jobs?<span class="plus">+</span></button><div class="faq-a">Yes. It's UGC-entitled and accepted for government job applications, promotions and further studies.</div></div>
-      <div class="faq-item"><button class="faq-q">How are LPU online classes conducted?<span class="plus">+</span></button><div class="faq-a">Through live sessions and recorded lectures on LPU e-Connect, plus digital study material and assignments.</div></div>
-      <div class="faq-item"><button class="faq-q">Does LPU Online provide placement support?<span class="plus">+</span></button><div class="faq-a">Yes — resume building, interview prep, career counselling and virtual recruitment drives.</div></div>
+
+    <div class="section-head" id="toc-fees"><div class="eyebrow">Fees</div><h2>LPU Online Courses and Fees 2026</h2><p>Lovely Professional University Online offers a wide range of undergraduate and postgraduate online degree programs across Management, Computer Applications, Commerce, Arts and Science streams. All courses have semester-based academic structures, with study material delivered digitally through the LMS.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Degree</th><th>Duration</th><th>Avg. Fees</th></tr></thead><tbody>
+        <tr><td><a class="link-text" onclick="navigateToCourse('ba')">Online BA</a></td><td>3 years</td><td>₹1,14,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('bba')">Online BBA</a></td><td>3 years</td><td>₹1,38,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('bca')">Online BCA</a></td><td>3 years</td><td>₹1,59,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('mcom')">Online M.Com</a></td><td>2 years</td><td>₹96,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('ma')">Online MA</a></td><td>2 years</td><td>₹76,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('mba')">Online MBA</a></td><td>2 years</td><td>₹1,86,000</td></tr>
+      </tbody></table>
+      <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;">
+        <button class="btn btn-solid">ROI Calculator →</button>
+        <button class="btn btn-ghost">View Fee Structure ₹</button>
+      </div>
+    </div>
+
+    <div class="section-head" id="toc-programmes"><div class="eyebrow">Programmes</div><h2>LPU Online Popular Programmes</h2><p>LPU Online popular courses include a variety of UG, PG and other courses across various disciplines, designed to provide strong academic knowledge along with practical, industry-relevant skills.</p></div>
+    <div class="block">
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('ba')">Online BA ↗</a></div>
+        <div class="row"><span><b>3 years</b>Duration</span><span><b>₹1,14,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Specializations in Online BA — Arts &amp; Literature, General</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('bba')">Online BBA ↗</a></div>
+        <div class="row"><span><b>3 years</b>Duration</span><span><b>₹1,38,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Specializations in Online BBA — General</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('bca')">Online BCA ↗</a></div>
+        <div class="row"><span><b>3 years</b>Duration</span><span><b>₹1,59,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">2 specializations available</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('mcom')">Online M.Com ↗</a></div>
+        <div class="row"><span><b>2 years</b>Duration</span><span><b>₹96,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">2 specializations available</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('ma')">Online MA ↗</a></div>
+        <div class="row"><span><b>2 years</b>Duration</span><span><b>₹76,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">5 specializations available — English, Political Science, History, Sociology and more</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('mba')">Online MBA ↗</a></div>
+        <div class="row"><span><b>2 years</b>Duration</span><span><b>₹1,86,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Multiple specializations available</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+    </div>
+
+    <div class="section-head" id="toc-eligibility"><div class="eyebrow">Eligibility</div><h2>LPU Online Eligibility and Selection Criteria</h2><p>The eligibility criteria depend on the course level, and admission is generally based on academic qualifications and document verification.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Course</th><th>Eligibility</th><th>Selection Process</th></tr></thead><tbody>
+        <tr><td>Online MBA</td><td>Bachelor's degree in any discipline</td><td>Merit-based admission and document verification</td></tr>
+        <tr><td>Online MCA</td><td>Bachelor's degree with Mathematics at Class 10 and Class 12 or graduation level</td><td>Merit-based</td></tr>
+        <tr><td>Online M.Com</td><td>Bachelor's degree in Commerce or related field</td><td>Merit-based</td></tr>
+        <tr><td>Online M.Sc (Mathematics)</td><td>Bachelor's degree with Mathematics</td><td>Merit-based</td></tr>
+        <tr><td>Online M.Sc (Economics)</td><td>Bachelor's degree in Economics or related field</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (English, Political Science, History, Sociology)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online BBA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
+        <tr><td>Online BCA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
+        <tr><td>Online BA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
+      </tbody></table>
+    </div>
+
+    <div class="section-head" id="toc-admission"><div class="eyebrow">Admission</div><h2>LPU Online Admission Process 2026</h2><p>A simple and transparent process — admission is based on academic eligibility criteria specified for each programme. Candidates can apply without visiting the campus.</p></div>
+    <div class="block">
+      <ol class="stepper">
+        <li><b>Online Registration</b> — Visit the LPU Online official portal and register using personal details such as name, email ID and mobile number. Login credentials are generated after successful registration.</li>
+        <li><b>Application Form Submission</b> — Fill out the online application form by selecting the desired programme and entering personal and academic details.</li>
+        <li><b>Document Upload</b> — Upload scanned copies of academic documents, identity proof, and photographs as part of the application process.</li>
+        <li><b>Eligibility Verification</b> — The university verifies eligibility based on academic qualifications and programme guidelines.</li>
+        <li><b>Fee Payment and Admission Confirmation</b> — Admission is confirmed after fee payment. Roll number and LMS login are issued to the student.</li>
+      </ol>
+    </div>
+
+    <div class="section-head" id="toc-rankings"><div class="eyebrow">Recognition</div><h2>LPU Online Rankings and Accreditations</h2><p>Lovely Professional Online university runs under the regulations of Lovely Professional University, India, and is recognized by the UGC-DEB with the highest NAAC A++ grade.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Authority / Body</th><th>Recognition / Status</th></tr></thead><tbody>
+        <tr><td>University Grants Commission (UGC)</td><td>Entitled to offer Online Degree Programmes</td></tr>
+        <tr><td>NAAC (National Assessment and Accreditation Council)</td><td class="hl">A++ Grade Accredited University</td></tr>
+        <tr><td>Association of Indian Universities (AIU)</td><td>Member</td></tr>
+        <tr><td>National Institutional Ranking Framework (NIRF)</td><td>Ranked University (Parent Institution)</td></tr>
+        <tr><td>Regulatory Framework</td><td>Online programmes offered as per UGC norms</td></tr>
+      </tbody></table>
+    </div>
+
+    <div class="section-head" id="toc-placements"><div class="eyebrow">Careers</div><h2>LPU Online Placements</h2><p>The university helps students prepare for job opportunities with career counselling, resume-building sessions, and interview preparation. Placements may vary depending on the programme and student performance.</p></div>
+    <div class="block">
+      <div class="stat-callouts">
+        <div class="stat-callout"><b>90%</b><span>Placement Rate</span></div>
+        <div class="stat-callout"><b>₹8-10 LPA</b><span>Highest Package</span></div>
+        <div class="stat-callout"><b>100+</b><span>Hiring Partners</span></div>
+      </div>
+      <table class="data"><thead><tr><th>Placement Metric</th><th>Details</th></tr></thead><tbody>
+        <tr><td>Average Salary Package</td><td>Around ₹3 LPA</td></tr>
+        <tr><td>Highest Reported Package</td><td class="hl">Up to ₹7.25 LPA</td></tr>
+        <tr><td>Internship Opportunities</td><td>Around 80+ students secured internships</td></tr>
+        <tr><td>Example Salary Offers</td><td>₹5.1 LPA, ₹4.56 LPA, ₹4.2 LPA</td></tr>
+        <tr><td>Placement Support</td><td>Resume building, interview preparation, career counselling</td></tr>
+        <tr><td>Placement Drives</td><td>Virtual and online recruitment drives</td></tr>
+      </tbody></table>
+      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: statistics are based on available reports and may vary depending on the course, recruiter, and individual student performance.</p>
+    </div>
+
+    <div class="section-head" id="toc-scholarships"><div class="eyebrow">Scholarships</div><h2>LPU Online Scholarships</h2><p>LPU Online offers scholarship and fee support options to eligible students according to university norms.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Scholarship / Benefit</th><th>Details</th></tr></thead><tbody>
+        <tr><td>Jai Jawan Scholarship</td><td>100% tuition fee waiver for active defence and paramilitary personnel enrolling in UG and PG programs</td></tr>
+        <tr><td>Student Grant</td><td>Fee concession offered on selected online programs (for example, around 20% grant on program fees)</td></tr>
+        <tr><td>Alumni Fee Waiver</td><td>Additional 10% fee waiver available for LPU alumni enrolling in online programs</td></tr>
+      </tbody></table>
+      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: Scholarship and fee benefits may vary by programme and admission cycle. Check the official LPU Online website for the latest details.</p>
+    </div>
+
+    <div class="section-head" id="toc-campus"><div class="eyebrow">Campus</div><h2>LPU Online Campus</h2><p>LPU Online lets students study from any location without visiting the physical campus. The main campus of Lovely Professional University is located in Phagwara, Punjab, India.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Mode of Transport</th><th>Details</th></tr></thead><tbody>
+        <tr><td>By Air</td><td>Nearest airport — Sri Guru Ram Dass Jee International Airport, Amritsar, about 90 km from campus</td></tr>
+        <tr><td>By Train</td><td>Nearest railway station — Phagwara Junction, around 6 km from the university</td></tr>
+        <tr><td>By Road</td><td>Located on Jalandhar–Delhi G.T. Road (NH-44); well connected by buses and taxis from Jalandhar and Ludhiana</td></tr>
+      </tbody></table>
+    </div>
+
+    <div class="section-head" id="toc-exam"><div class="eyebrow">Exams</div><h2>LPU Online Examination Pattern</h2><p>Lovely Professional University conducts examinations for its online courses through its digital learning platform. The evaluation system usually includes assignments, internal assessments, and end-term examinations to evaluate students' performance during the course.</p></div>
+
+    <div class="section-head" id="toc-degree"><div class="eyebrow">Degree</div><h2>LPU Online Sample Degree</h2><p>The LPU Online degree is recognized and approved by the UGC. It is considered valid for all government and private sector jobs, promotions, and for pursuing further studies in India and abroad. The degree represents the successful completion of the programme and the knowledge earned by the student.</p></div>
+
+    <div class="section-head" id="toc-dates"><div class="eyebrow">Dates</div><h2>LPU Online Admission Important Dates</h2><p>Students must complete the application before the deadline and submit required documents such as DEB ID and academic certificates during admission.</p></div>
+    <div class="block">
+      <table class="data"><thead><tr><th>Event</th><th>Important Date</th></tr></thead><tbody>
+        <tr><td>Online Application Start</td><td>Ongoing</td></tr>
+        <tr><td>Last Date to Apply</td><td>As per admission cycle</td></tr>
+        <tr><td>Document Submission</td><td>During application process</td></tr>
+        <tr><td>Admission Confirmation</td><td>After document verification and fee payment</td></tr>
+        <tr><td>Programme Commencement</td><td>As per university schedule</td></tr>
+      </tbody></table>
+      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: Admission deadlines may vary depending on the course and intake cycle. Check the official LPU Online website for the latest updates.</p>
+    </div>
+
+    <div class="section-head" id="toc-reviews"><div class="eyebrow">Reviews</div><h2>LPU Online Reviews</h2></div>
+    <div class="review-grid" style="margin-bottom:24px;">
+      <div class="review-card"><div class="avatar">AS</div><p>"The LMS platform was easy to use and helped me manage studies with work."</p><b>Aman Singh</b><span>Online learner</span></div>
+      <div class="review-card"><div class="avatar">SS</div><p>"Faculty support during online sessions was helpful and responsive."</p><b>Sushma Sharma</b><span>Online learner</span></div>
+      <div class="review-card"><div class="avatar">KR</div><p>"Recorded lectures made revision convenient and flexible."</p><b>Kelvin Rao</b><span>Online learner</span></div>
+      <div class="review-card"><div class="avatar">KM</div><p>"Career guidance sessions were useful for interview preparation."</p><b>Karan Malhotra</b><span>Online learner</span></div>
+    </div>
+
+    <div class="faq-section" id="toc-faqs">
+      <div class="section-head"><div class="eyebrow">Help</div><h2>LPU Online FAQs</h2></div>
+      <div class="faq-item"><button class="faq-q">Is the LPU online degree valid for government jobs?<span class="plus">+</span></button><div class="faq-a">Yes. It's UGC-approved and accepted for government job applications, promotions and further studies.</div></div>
+      <div class="faq-item"><button class="faq-q">Is LPU Online degree valid in India?<span class="plus">+</span></button><div class="faq-a">Yes, the degree is UGC-approved and valid across India, as well as recognised abroad.</div></div>
+      <div class="faq-item"><button class="faq-q">How are LPU online classes conducted?<span class="plus">+</span></button><div class="faq-a">Through live sessions and recorded lectures on the LPU e-Connect LMS, along with digital study material and assignments.</div></div>
+      <div class="faq-item"><button class="faq-q">Does LPU Online provide placement support?<span class="plus">+</span></button><div class="faq-a">Yes — resume building, interview preparation, career counselling and virtual recruitment drives.</div></div>
+      <div class="faq-item"><button class="faq-q">Can working professionals apply for LPU online?<span class="plus">+</span></button><div class="faq-a">Yes, the online format is designed specifically for working professionals, fresh graduates and career switchers.</div></div>
+      <div class="faq-item"><button class="faq-q">Is LPU Online admission open for 2026?<span class="plus">+</span></button><div class="faq-a">Yes, LPU Online admission 2026 is open for all its courses; candidates must apply via the official website.</div></div>
+      <div class="faq-item"><button class="faq-q">Is DEB ID required for LPU Online admission?<span class="plus">+</span></button><div class="faq-a">Yes, a DEB ID is required as part of the UGC-DEB registration process for online degree students.</div></div>
+      <div class="faq-item"><button class="faq-q">What is the duration of LPU Online MBA?<span class="plus">+</span></button><div class="faq-a">The Online MBA runs for 2 years, split across 4 semesters.</div></div>
+      <div class="faq-item"><button class="faq-q">How are exams conducted in LPU Online?<span class="plus">+</span></button><div class="faq-a">Through a mix of assignments, internal assessments, and end-term examinations, conducted online.</div></div>
+      <div class="faq-item"><button class="faq-q">What is the fee for LPU Online MBA in 2026?<span class="plus">+</span></button><div class="faq-a">The total fee for LPU Online MBA is approximately ₹1,86,000, payable semester-wise.</div></div>
+      <div class="faq-item"><button class="faq-q">Can students pay LPU Online MBA fees in installments?<span class="plus">+</span></button><div class="faq-a">Yes, fees can be paid semester-wise rather than as a single lumpsum.</div></div>
+      <div class="faq-item"><button class="faq-q">Which is better, LPU Online or Amity Online?<span class="plus">+</span></button><div class="faq-a">Both are UGC-entitled and NAAC accredited; the right choice depends on your course, budget and career goals — use the Compare Colleges tool to see them side by side.</div></div>
     </div>
   </section>
+
 
   <!-- COURSES (list view + detail view share this panel) -->
   <section class="panel" id="panel-courses">
 
     <div id="course-list-view">
-      <div class="section-head"><div class="eyebrow">Courses</div><h2>Popular LPU Online programmes</h2><p>Click any course to see its fees, eligibility, syllabus and placement details.</p></div>
+      <div class="section-head"><div class="eyebrow">Courses</div><h2>LPU Online Courses and Fees 2026</h2><p>Lovely Professional University is a well known private University located in Phagwara, Punjab. The University offers many undergraduate, postgraduate and professional programs through its digital learning platform called LPU Online — flexible education for students and working professionals who want to continue their study remotely. Click any course below to see its fees, eligibility, syllabus and placement details.</p></div>
       <div class="course-grid" style="margin-bottom:24px;" id="course-grid"></div>
 
       <div class="block">
-        <h3>UG programmes — fee structure</h3>
+        <h3>LPU Online fee structure 2026</h3>
+        <p style="font-size:13px;">LPU Online fee structure is based on a semester payment system. Online courses are comparatively affordable because they do not include campus infrastructure or hostel expenses.</p>
+        <h3 style="margin-top:14px;">UG programmes</h3>
         <table class="data"><thead><tr><th>Programme</th><th>Duration</th><th>Fee / semester</th><th>Total fee</th></tr></thead><tbody>
           <tr><td>BBA (Online)</td><td>3 yrs · 6 sem</td><td>₹25,000</td><td>₹1,50,000</td></tr>
           <tr><td>BCA (Online)</td><td>3 yrs · 6 sem</td><td>₹25,000</td><td>₹1,50,000</td></tr>
           <tr><td>BA (Online)</td><td>3 yrs · 6 sem</td><td>₹20,000</td><td>₹1,20,000</td></tr>
         </tbody></table>
-        <h3>PG programmes — fee structure</h3>
+        <h3>PG programmes</h3>
         <table class="data"><thead><tr><th>Programme</th><th>Duration</th><th>Fee / semester</th><th>Total fee</th></tr></thead><tbody>
           <tr><td>MBA (Online)</td><td>2 yrs · 4 sem</td><td>₹45,000 – ₹50,000</td><td>₹2,00,000</td></tr>
           <tr><td>MCA (Online)</td><td>2 yrs · 4 sem</td><td>₹37,000</td><td>₹1,48,000</td></tr>
           <tr><td>M.Com (Online)</td><td>2 yrs · 4 sem</td><td>₹25,000</td><td>₹1,00,000</td></tr>
         </tbody></table>
+        <h3>Certificate & diploma courses</h3>
+        <table class="data"><thead><tr><th>Course type</th><th>Duration</th><th>Fee (approx.)</th></tr></thead><tbody>
+          <tr><td>Online Certificate Programs</td><td>3 – 6 months</td><td>₹10,000 – ₹30,000</td></tr>
+          <tr><td>Online Diploma Programs</td><td>6 – 12 months</td><td>₹20,000 – ₹50,000</td></tr>
+        </tbody></table>
+      </div>
+
+      <div class="block">
+        <h3>LPU Online admission dates 2026</h3>
+        <table class="data"><thead><tr><th>Event</th><th>Details</th><th>Tentative date</th></tr></thead><tbody>
+          <tr><td>Application Form Release</td><td>Online Programs</td><td>January 2026</td></tr>
+          <tr><td>Admission Registration Begins</td><td>UG / PG Courses</td><td>January – February 2026</td></tr>
+          <tr><td>Last Date to Apply</td><td>Online Courses</td><td class="hl">July 2026</td></tr>
+          <tr><td>Document Verification</td><td>Online</td><td>After application</td></tr>
+          <tr><td>Admission Confirmation</td><td>Selected candidates</td><td>Within a few days</td></tr>
+          <tr><td>Academic Session Begins</td><td>Online programs</td><td>August 2026</td></tr>
+        </tbody></table>
+      </div>
+
+      <div class="block">
         <h3>Learning facilities</h3>
+        <p style="font-size:13px;">LPU Online provides a modern digital learning system that allows students to attend classes from any location, with access to an LMS where students can watch lectures, download study material and submit assignments.</p>
         <ul class="check-list">
           <li>Live online classes and recorded lectures</li>
           <li>Digital study material and e-books</li>
-          <li>LMS access — LPU e-Connect</li>
+          <li>Online assignments and examinations</li>
+          <li>Learning Management System (LMS) access</li>
           <li>Faculty mentorship and academic guidance</li>
         </ul>
+      </div>
+
+      <div class="section-head"><div class="eyebrow">Reviews</div><h2>LPU Online student reviews</h2></div>
+      <div class="review-grid" style="margin-bottom:24px;">
+        <div class="review-card"><div class="avatar">RM</div><p>"The syllabus is industry oriented and the online platform allows flexible learning."</p><b>Rahul Mehta</b><span>Online MBA</span></div>
+        <div class="review-card"><div class="avatar">SG</div><p>"Study material and recorded lectures make subjects easy to understand, and the fees are affordable."</p><b>Sneha Gupta</b><span>Online BBA</span></div>
+        <div class="review-card"><div class="avatar">AK</div><p>"Practical assignments help me a lot to get technical knowledge and skills."</p><b>Amit Kumar</b><span>Online BCA</span></div>
+        <div class="review-card"><div class="avatar">PS</div><p>"The faculty members are helpful and the course structure is well organized."</p><b>Pooja Sharma</b><span>Online M.Com</span></div>
+      </div>
+
+      <div class="faq-section">
+        <div class="section-head"><div class="eyebrow">Help</div><h2>Courses and fees FAQs</h2></div>
+        <div class="faq-item"><button class="faq-q">What courses are offered by LPU Online?<span class="plus">+</span></button><div class="faq-a">MBA, BBA, MCA, BCA, M.Com, BA, MA, M.Sc and various certificate/diploma programmes across Management, Computer Applications, Commerce, Arts and Science.</div></div>
+        <div class="faq-item"><button class="faq-q">What is the fee for the Online MBA programme?<span class="plus">+</span></button><div class="faq-a">The total fee is around ₹2,00,000, charged as ₹45,000–₹50,000 per semester across 4 semesters.</div></div>
+        <div class="faq-item"><button class="faq-q">Is an entrance exam required for LPU Online admission?<span class="plus">+</span></button><div class="faq-a">No — admission is merit-based for most programmes, except select courses that accept LPUNEST.</div></div>
+        <div class="faq-item"><button class="faq-q">Who can apply for LPU Online courses?<span class="plus">+</span></button><div class="faq-a">Working professionals, fresh graduates and career switchers who meet the course-wise eligibility criteria.</div></div>
       </div>
     </div>
 
@@ -348,35 +577,89 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
 
   <!-- ADMISSION -->
   <section class="panel" id="panel-admission">
-    <div class="section-head"><div class="eyebrow">Admission 2026</div><h2>How to apply to LPU Online</h2><p>A fully digital, merit-based process — no campus visit required.</p></div>
+    <div class="section-head"><div class="eyebrow">Admission 2026</div><h2>LPU Online Admission Highlights 2026</h2><p>LPU Online admission is based on merit or academic scores from previous qualifying exams. Check the LPU Online official website regularly for updates on application status and selection process.</p></div>
     <div class="block">
-      <table class="data"><thead><tr><th>Particular</th><th>Detail</th></tr></thead><tbody>
-        <tr><td>Mode of application</td><td>Fully online</td></tr>
-        <tr><td>Admission criteria</td><td>Merit-based</td></tr>
-        <tr><td>Registration fee</td><td>₹600</td></tr>
-        <tr><td>Registration deadline (Feb cycle)</td><td class="hl">28 February 2026</td></tr>
+      <table class="data"><thead><tr><th>Particulars</th><th>Details</th></tr></thead><tbody>
+        <tr><td>Mode of Application</td><td>Online</td></tr>
+        <tr><td>Admission Criteria</td><td>Merit-based</td></tr>
+        <tr><td>Accepted Entrance Exams</td><td>LPUNEST (for specific courses) / Merit</td></tr>
+        <tr><td>Courses Offered</td><td>MBA, MCA, BBA, BCA, B.Com, BA, MA, M.Sc</td></tr>
+        <tr><td>Application Status</td><td class="hl">Open for January/February 2026</td></tr>
+        <tr><td>Registration Fee</td><td>₹600</td></tr>
       </tbody></table>
     </div>
+
+    <div class="block">
+      <h3>Important dates 2026</h3>
+      <table class="data"><thead><tr><th>Event</th><th>Tentative timeline</th></tr></thead><tbody>
+        <tr><td>Application Start Date</td><td>Ongoing</td></tr>
+        <tr><td>Registration deadline (February 2026)</td><td class="hl">28th February 2026</td></tr>
+        <tr><td>July session admission 2026</td><td>Starts July 2026</td></tr>
+        <tr><td>Document Verification</td><td>After application submission</td></tr>
+        <tr><td>LMS Activation</td><td>Post fee payment</td></tr>
+      </tbody></table>
+    </div>
+
+    <div class="block">
+      <h3>Eligibility & selection criteria 2026</h3>
+      <table class="data"><thead><tr><th>Course</th><th>Minimum eligibility requirement</th><th>Selection process</th></tr></thead><tbody>
+        <tr><td>Online MBA (all specialisations)</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online BBA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
+        <tr><td>Online MCA (all specialisations)</td><td>BCA/B.Sc (CS/IT) or graduation with Maths*</td><td>Merit-based</td></tr>
+        <tr><td>Online BCA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
+        <tr><td>Online M.Com</td><td>Bachelor's degree in Commerce/relevant field</td><td>Merit-based</td></tr>
+        <tr><td>Online B.Com</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (English / Economics / History / Sociology / Political Science)</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online BA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
+        <tr><td>Online M.Sc Mathematics</td><td>Bachelor's degree in Mathematics/relevant field</td><td>Merit-based</td></tr>
+        <tr><td>DCA / DBA</td><td>10+2 from a recognised board</td><td class="hl">Direct Admission</td></tr>
+      </tbody></table>
+      <p style="font-size:12px;color:var(--slate);margin-top:8px;">*Students for MCA without a Mathematics background must complete a bridge course.</p>
+    </div>
+
+    <div class="block">
+      <h3>Admission process 2026</h3>
+      <p>LPU online admission 2026 is a clear and simple process. Everything is digital for the comfort of students. This allows learners to apply from any location. LPU Online ensures a fast and fair selection for everyone.</p>
+      <ol class="stepper">
+        <li><b>Application Process 2026</b> — LPU Online admission 2026 begins with an online form. Students must register on the official portal first, providing a correct email and mobile number for all updates. The registration fee is only ₹600. Fill in your personal details and academic history carefully, and double-check all information before you submit the final form.</li>
+        <li><b>Selection</b> — LPU Online reviews all uploaded school and college documents. Document verification time is usually very quick. The university checks the academic eligibility of every candidate, and shortlisted students receive a confirmation on their registered email.</li>
+        <li><b>Admission Confirmation</b> — Complete the fee payment process to confirm your seat by paying the first semester fee. The university then provides your LPU Online login details, which you use to enter the study portal — containing all your books and video lessons — and get started.</li>
+      </ol>
+    </div>
+
     <div class="block">
       <h3>Application steps</h3>
       <ol class="stepper">
-        <li><b>Visit the admissions page</b> and start your application.</li>
-        <li><b>Register</b> with your basic details.</li>
-        <li><b>Log in</b> to your admission dashboard.</li>
-        <li><b>Fill the form</b> — personal and academic information.</li>
-        <li><b>Select your course</b> and specialisation.</li>
-        <li><b>Upload documents</b> — certificates and ID.</li>
-        <li><b>Pay the registration fee</b> online.</li>
-        <li><b>Submit</b> and await confirmation.</li>
+        <li><b>Official website visit</b> — go to the LPU Online admissions page.</li>
+        <li><b>Registration</b> — enter your details to create an account.</li>
+        <li><b>Login</b> — use your credentials for the LPU Online portal.</li>
+        <li><b>Form filling</b> — enter your personal and academic information.</li>
+        <li><b>Course selection</b> — pick the degree and specialisation you want.</li>
+        <li><b>Upload documents</b> — scan and upload your certificates and ID.</li>
+        <li><b>Fee payment</b> — pay the LPU Online registration fee.</li>
+        <li><b>Final submission</b> — review all details and click submit.</li>
       </ol>
       <h3>Documents required</h3>
       <ul class="check-list">
-        <li>Class 10 & 12 marksheets and certificates</li>
+        <li>Class 10th marksheet and certificate</li>
+        <li>Class 12th marksheet and certificate</li>
         <li>Graduation marksheet (for PG applicants)</li>
-        <li>Address proof (Aadhaar / Voter ID)</li>
+        <li>Address proof (Aadhaar Card, Voter ID)</li>
         <li>Recent passport-size photographs</li>
-        <li>Category certificate, if claiming a scholarship</li>
+        <li>Transfer certificate or migration certificate</li>
+        <li>Category certificate (if claiming a scholarship)</li>
       </ul>
+    </div>
+
+    <div class="block">
+      <h3>Scholarship types 2026</h3>
+      <div class="badge-list">
+        <span class="badge green">Merit-based</span>
+        <span class="badge green">20% early-bird grant</span>
+        <span class="badge chip">Defence personnel concession</span>
+        <span class="badge chip">Corporate employee discount</span>
+        <span class="badge chip">Divyang support</span>
+      </div>
     </div>
     <div class="review-grid" style="grid-template-columns:repeat(2,1fr);">
       <div class="review-card"><div class="avatar">NG</div><p>"Login dashboard is simple — tracked my application and started classes a week after paying."</p><b>Neha Gupta</b><span>MCA, 2024 batch</span></div>
@@ -414,13 +697,23 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
 const COURSES = {
   ba: {
     name:"Online BA", duration:"3 years", meta:"9 electives", price:"₹1.08L – ₹1.32L", tags:"Content · HR · Admin roles",
-    highlights:[["Duration","3 years (6 semesters)"],["Mode","100% online"],["Eligibility","10+2 from a recognised board"],["Entrance exam","Not required"],["Fee range (total)","₹1,08,000 – ₹1,32,000"],["Average package","₹3.0 – ₹5.0 LPA"],["Highest package","Up to ₹10 LPA"]],
-    fees:[["Actual fee","₹20,000 / semester",0],["With 20% student grant","₹16,400 / semester",1],["Grant + no-cost EMI","₹4,100 / month (24-mo)",1],["Grant + 10% lumpsum waiver","₹89,760 total",1],["Examination fee","₹2,000 / semester",0],["Registration fee","₹600 (one-time)",0]],
-    note:"Early-bird grant deadline: 21 March 2026. Batch commences 14 March 2026. Apply by 25 March 2026.",
-    eligibility:[["Qualification","10+2 pass, any stream"],["Minimum marks","50% (45% for SC/ST/OBC)"],["Subject requirement","None — any 12th stream accepted"],["Age limit","No maximum age limit"]],
-    syllabus:[["Semester 1",["Core I & Core II (elective subjects)","Environmental Sciences","Introduction to English Communication Skills"]],["Semester 2",["Core I & Core II","Advanced English Communication Skills"]],["Semester 3",["Core I & Core II","Community Development Project"]],["Semester 5 & 6",["Skill Enhancement Courses III & IV","Term Paper (Research Work)","Capstone Project (Final Major Project)"]]],
-    placements:[["Placement rate (2025)","Over 90%",1],["Hiring partners","2,225+ companies",0],["Typical roles","Content Writer, HR Executive, Admin roles",0]],
-    scholarships:[["Early Bird Grant — 20%",1],["Lumpsum — extra 10%",0],["Academic Excellence — up to 20%",0],["Jai Jawan — 100% waiver",1],["Single Girl Child — up to 10%",0]]
+    highlights:[["Course Name","Bachelor of Arts (BA)"],["Duration","3 Years (6 Semesters)"],["Mode","100% Online"],["Eligibility","10+2 from a recognized board"],["Selection Criteria","Merit based on 12th marks"],["Entrance Exams Accepted","Not required"],["Fee Range (total)","₹1,08,000 – ₹1,32,000"],["Average Package","₹3.0 LPA – ₹5.0 LPA"],["Highest Package (reported)","₹30.0 LPA – ₹62.72 LPA"]],
+    fees:[["Actual fee","₹20,000 / semester",0],["Fee with 20% student grant","₹16,400 / semester",1],["Grant + no-cost EMI","₹4,100 / month (24-month EMI)",1],["Grant + 10% extra waiver (lumpsum)","₹89,760 total",1],["Examination fee","₹2,000 / semester",0],["Registration fee (non-refundable)","₹600 (one-time)",0]],
+    note:"Early-bird grant/scholarship deadline: 21 March 2026. Batch commences 14 March 2026. Application last date: 25 March 2026. Document verification within 3–5 working days.",
+    eligibility:[["Educational Qualification","10+2 (Higher Secondary) pass in any stream (Arts, Commerce or Science) or equivalent"],["Minimum Percentage","At least 50% total marks in 10+2 (45% for SC/ST/OBC categories)"],["Subject Requirement","No specific subjects required — any 12th stream accepted"],["English Proficiency","English as a 10+2 subject, or prior study in an English-medium school"],["Age Limit","No maximum age limit — open to all ages and working professionals"]],
+    syllabus:[["Semester 1",["Core I (Subject 1) & Core II (Subject 2)","ECHE110: Environmental Sciences","EENG139: Introduction to English Communication Skills"]],["Semester 2",["Core I & Core II","EENG140: Advanced English Communication Skills","Electives / specialization subjects"]],["Semester 3",["Core I & Core II","ESSC102: Community Development Project","Electives / specialization subjects"]],["Semester 4",["Core I & Core II","SEC-I & SEC-II: Skill Enhancement Courses","Electives / specialization subjects"]],["Semester 5",["Core I & Core II","SEC-III: Skill Enhancement Course III","ESSC303: Term Paper (Research Work)","Electives / specialization subjects"]],["Semester 6",["Core I & Core II","SEC-IV: Skill Enhancement Course IV","ESSC304: Capstone Project (Final Major Project)","Electives / specialization subjects"]]],
+    placements:[["Placement rate (2025)","Over 90%",1],["Highest salary package","₹10.00 LPA",1],["Average package (top 10%)","₹9.73 LPA",0],["Average package (overall)","₹3.00 – ₹5.00 LPA",0],["Total hiring companies","More than 2,225 partners",0]],
+    scholarships:[["Early Bird Grant — 20%",1],["Lumpsum — extra 10%",0],["Academic Excellence — up to 20%",0],["Jai Jawan — 100% waiver",1],["Defence Personnel Grant — up to 15%",0],["LPU Alumni Grant — 10%",0],["Single Girl Child — up to 10%",0]],
+    scholarshipTable:[
+      ["Early Bird Student Grant","Apply and pay the initial fee by 21 March 2026","20% waiver every semester (fee becomes ₹16,400)"],
+      ["Lumpsum Payment","Pay the total 3-year course fee at once","Extra 10% waiver on the total amount (total fee: ₹89,760)"],
+      ["Academic Excellence Grant","Scored 75% or above in 10+2","Up to 20% fee reduction per semester"],
+      ["Jai Jawan Scholarship","Active Indian Defence or Paramilitary personnel","100% tuition fee waiver (covers programme and exam fees)"],
+      ["Defence Personnel Grant","Wards or spouses of Defence/Paramilitary personnel","Up to 15% fee waiver on semester fees"],
+      ["LPU Alumni Grant","Previous LPU students (any programme) joining BA","10% fee waiver on the programme fee"],
+      ["Single Girl Child Grant","Only girl child in the family (self-declaration required)","Up to 10% fee waiver on semester fees"]
+    ],
+    rankings:[["UGC Entitlement","Entitled by University Grants Commission (UGC-DEB)"],["NAAC Accreditation","Highest Grade A++ (Score 3.68/4.0)"],["NIRF Ranking 2025","Ranked 31st among all universities in India"],["WURI Ranking 2024","Ranked 4th in India"],["QS World Rankings","Ranked 187th in Asia (2026 edition)"],["WES Recognition","Recognized by World Education Services (for Canada/USA)"],["Global Memberships","Member of AIU (India) and ACU (UK)"]]
   },
   mba:{
     name:"Online MBA", duration:"2 years", meta:"Merit-based", price:"₹2.00L total", tags:"Marketing · HR · Finance",
@@ -462,6 +755,16 @@ const COURSES = {
     placements:[["Placement rate","Over 85%",1],["Hiring partners","2,225+ companies",0]],
     scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1]]
   },
+  ma:{
+    name:"Online MA", duration:"2 years", meta:"5 specializations", price:"₹76,000 total", tags:"English · Political Science · History · Sociology",
+    highlights:[["Duration","2 years (4 semesters)"],["Mode","100% online"],["Eligibility","Bachelor's degree in relevant discipline"],["Entrance exam","Not required"],["Fee range (total)","₹76,000"],["Average package","₹3 – ₹4.5 LPA"],["Highest package","Up to ₹6 LPA"]],
+    fees:[["Actual fee","₹19,000 / semester",0],["With 20% student grant","₹15,200 / semester",1],["Registration fee","₹600 (one-time)",0]],
+    note:"Specializations available in English, Political Science, History and Sociology.",
+    eligibility:[["Qualification","Bachelor's degree in relevant discipline"],["Minimum marks","50% aggregate (45% for reserved categories)"]],
+    syllabus:[["Semester 1 & 2",["Core subjects in chosen specialization","Research Methodology"]],["Semester 3 & 4",["Advanced electives","Dissertation / Term Paper"]]],
+    placements:[["Average package","₹3 – ₹4.5 LPA",0],["Highest package","Up to ₹6 LPA",1]],
+    scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1]]
+  },
   mcom:{
     name:"Online M.Com", duration:"2 years", meta:"Commerce grad", price:"₹1.00L total", tags:"Finance · Accounting",
     highlights:[["Duration","2 years (4 semesters)"],["Mode","100% online"],["Eligibility","Bachelor's in Commerce or related field"],["Entrance exam","Not required"],["Fee range (total)","₹1,00,000"],["Average package","₹4 LPA"],["Highest package","Up to ₹7 LPA"]],
@@ -495,6 +798,8 @@ function renderCourseDetail(slug){
   const semItems = c.syllabus.map(([label,items])=>`
     <div class="sem-item"><button class="sem-q">${label}<span>+</span></button><div class="sem-a"><ul>${items.map(i=>`<li>${i}</li>`).join('')}</ul></div></div>`).join('');
   const schBadges = c.scholarships.map(s=>`<span class="badge ${s[1]===1?'green':'chip'}">${s[0]}</span>`).join('');
+  const rankingsBlock = c.rankings ? `<div class="block"><h3>Rankings & accreditations</h3><table class="data"><thead><tr><th>Particulars</th><th>Details</th></tr></thead><tbody>${rows(c.rankings)}</tbody></table></div>` : '';
+  const scholarshipsTableBlock = c.scholarshipTable ? `<h3>Scholarship details</h3><table class="data"><thead><tr><th>Grant category</th><th>Eligibility</th><th>Benefit</th></tr></thead><tbody>${c.scholarshipTable.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table>` : '';
 
   return `
     <a class="back-link" id="back-to-courses">← All courses</a>
@@ -506,7 +811,8 @@ function renderCourseDetail(slug){
     <div class="block"><h3>Fee breakdown & grants</h3><table class="data"><thead><tr><th>Fee component</th><th>Amount</th></tr></thead><tbody>${feeRows}</tbody></table><p style="font-size:12.5px;color:var(--slate);">${c.note}</p></div>
     <div class="block"><h3>Eligibility criteria</h3><table class="data"><thead><tr><th>Criteria</th><th>Detail</th></tr></thead><tbody>${eligRows}</tbody></table></div>
     <div class="block"><h3>Semester-wise syllabus</h3>${semItems}</div>
-    <div class="block"><h3>Placement</h3><table class="data"><thead><tr><th>Metric</th><th>Detail</th></tr></thead><tbody>${placeRows}</tbody></table><h3>Scholarships</h3><div class="badge-list">${schBadges}</div></div>
+    <div class="block"><h3>Placement</h3><table class="data"><thead><tr><th>Metric</th><th>Detail</th></tr></thead><tbody>${placeRows}</tbody></table><h3>Scholarships</h3><div class="badge-list">${schBadges}</div>${scholarshipsTableBlock}</div>
+    ${rankingsBlock}
   `;
 }
 
