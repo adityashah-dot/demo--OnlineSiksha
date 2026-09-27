@@ -41,7 +41,7 @@ header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px s
 .crumb{font-size:13px;color:var(--slate);padding:16px 0 0;}
 .crumb a:hover{color:var(--navy);}
 
-.hero{background:linear-gradient(135deg,rgba(10,19,48,.55),rgba(15,30,61,.38)),url('campus.jpg') center/cover no-repeat;color:#fff;margin-top:16px;border-radius:16px;padding:34px;}
+.hero{background:linear-gradient(135deg,rgba(10,19,48,.55),rgba(15,30,61,.38)),url(campus.jpg) center/cover no-repeat;color:#fff;margin-top:16px;border-radius:16px;padding:34px;}
 .hero-inner{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;}
 .hero-left{flex:1;min-width:290px;}
 .pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:5px 12px;border-radius:99px;font-size:12px;font-weight:700;letter-spacing:.02em;margin-bottom:16px;}
@@ -50,7 +50,7 @@ header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px s
 .logo-box{width:64px;height:64px;border-radius:50%;background:#fff;color:var(--navy);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:4px;box-shadow:0 2px 10px rgba(0,0,0,.25);}.logo-box img{width:100%;height:100%;object-fit:contain;border-radius:50%;}
 .hero h1{font-size:clamp(24px,3.2vw,32px);margin:0 0 6px;font-weight:800;letter-spacing:-.01em;}
 .hero .loc{font-size:14px;color:#b7c0dc;}
-.hero p.desc{margin-top:16px;font-size:14.5px;color:#c6cee6;max-width:600px;}
+.hero p.desc{margin-top:16px;font-size:14.5px;color:#c6cee6;max-width:600px;line-height:1.7;}
 .hero p.desc b{color:var(--orange);}
 .hero-btns{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;}
 .btn-outline-w{background:transparent;border:1.5px solid rgba(255,255,255,.45);color:#fff;border-radius:9px;padding:10px 18px;font-size:13.8px;font-weight:700;cursor:pointer;font-family:inherit;}
@@ -94,12 +94,15 @@ header.site{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px s
 .section-head{margin-bottom:16px;}
 .eyebrow{font-size:11.5px;font-weight:800;color:var(--orange);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
 .section-head h2{font-size:21px;margin:0 0 6px;letter-spacing:-.01em;}
-.section-head p{font-size:14px;color:var(--slate);margin:0;max-width:640px;}
+.section-head p{font-size:14.5px;color:var(--slate);margin:0;max-width:680px;line-height:1.75;}
 
 .block{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:22px;}
-.block h3{font-size:15px;margin:16px 0 8px;color:var(--navy);}
+.block h3{font-size:15px;margin:18px 0 9px;color:var(--navy);}
 .block h3:first-child{margin-top:0;}
-.block p{font-size:14px;color:#3a4358;margin:0 0 8px;}
+.block p{font-size:14px;color:#3a4358;margin:0 0 12px;line-height:1.75;}
+.note-box{display:flex;gap:10px;align-items:flex-start;background:var(--chip);border-left:3px solid var(--navy);border-radius:8px;padding:12px 14px;font-size:12.8px;color:#475066;margin-top:12px;line-height:1.65;}
+.note-box .dot{flex-shrink:0;font-size:14px;line-height:1.5;}
+.note-box b{color:var(--ink);}
 
 table.data{width:100%;border-collapse:collapse;font-size:13.6px;margin:8px 0;}
 table.data th{background:var(--chip);color:var(--ink);text-align:left;padding:10px 12px;font-weight:700;}
@@ -176,7 +179,7 @@ table.data td.hl{color:var(--green);font-weight:700;}
 .link-text:hover{color:#1741c9;}
 .callout-news{background:var(--peach-bg);border-radius:12px;padding:16px 18px;margin-bottom:20px;}
 .callout-news h4{margin:0 0 4px;font-size:15px;}
-.callout-news p{margin:0;font-size:13.5px;color:#3a4358;}
+.callout-news p{margin:0;font-size:13.5px;color:#3a4358;line-height:1.65;}
 .toc{list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
 @media (max-width:600px){ .toc{grid-template-columns:1fr;} }
 .toc a{color:var(--navy);font-size:13.3px;font-weight:600;}
@@ -233,7 +236,7 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
       <div class="hero-left">
         <div class="pill"><span class="dot"></span> NIRF #31 · NAAC A++ ACCREDITED</div>
         <div class="hero-top">
-           <div class="logo-box"><img src="logo.png" alt="LPU Online logo"></div>
+          <div class="logo-box"><img src="logo.png" alt="LPU Online logo"></div>
           <div>
             <h1>Lovely Professional University Online</h1>
             <div class="loc">Phagwara, Punjab · Private University · Est. 2005</div>
@@ -332,12 +335,15 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
     <div class="section-head" id="toc-fees"><div class="eyebrow">Fees</div><h2>LPU Online Courses and Fees 2026</h2><p>Lovely Professional University Online offers a wide range of undergraduate and postgraduate online degree programs across Management, Computer Applications, Commerce, Arts and Science streams. All courses have semester-based academic structures, with study material delivered digitally through the LMS.</p></div>
     <div class="block">
       <table class="data"><thead><tr><th>Degree</th><th>Duration</th><th>Avg. Fees</th></tr></thead><tbody>
-        <tr><td><a class="link-text" onclick="navigateToCourse('ba')">Online BA</a></td><td>3 years</td><td>₹1,14,000</td></tr>
-        <tr><td><a class="link-text" onclick="navigateToCourse('bba')">Online BBA</a></td><td>3 years</td><td>₹1,38,000</td></tr>
-        <tr><td><a class="link-text" onclick="navigateToCourse('bca')">Online BCA</a></td><td>3 years</td><td>₹1,59,000</td></tr>
-        <tr><td><a class="link-text" onclick="navigateToCourse('mcom')">Online M.Com</a></td><td>2 years</td><td>₹96,000</td></tr>
-        <tr><td><a class="link-text" onclick="navigateToCourse('ma')">Online MA</a></td><td>2 years</td><td>₹76,000</td></tr>
-        <tr><td><a class="link-text" onclick="navigateToCourse('mba')">Online MBA</a></td><td>2 years</td><td>₹1,86,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('ba')">Online BA</a><br><span style="font-size:11.5px;color:var(--slate);">2 specializations available</span></td><td>3 years</td><td>₹1,14,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('bba')">Online BBA</a><br><span style="font-size:11.5px;color:var(--slate);">1 specialization available</span></td><td>3 years</td><td>₹1,38,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('bca')">Online BCA</a><br><span style="font-size:11.5px;color:var(--slate);">2 specializations available</span></td><td>3 years</td><td>₹1,59,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('mcom')">Online M.Com</a><br><span style="font-size:11.5px;color:var(--slate);">2 specializations available</span></td><td>2 years</td><td>₹96,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('ma')">Online MA</a><br><span style="font-size:11.5px;color:var(--slate);">5 specializations available</span></td><td>2 years</td><td>₹76,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('mba')">Online MBA</a><br><span style="font-size:11.5px;color:var(--slate);">12 specializations available</span></td><td>2 years</td><td>₹1,86,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('mca')">Online MCA</a><br><span style="font-size:11.5px;color:var(--slate);">7 specializations available</span></td><td>2 years</td><td>₹1,40,000</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('msc')">Online MSc</a><br><span style="font-size:11.5px;color:var(--slate);">2 specializations available</span></td><td>2 years</td><td>₹74,666</td></tr>
+        <tr><td><a class="link-text" onclick="navigateToCourse('diploma')">Online Diploma</a><br><span style="font-size:11.5px;color:var(--slate);">2 specializations available</span></td><td>1 year</td><td>₹46,000</td></tr>
       </tbody></table>
       <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;">
         <button class="btn btn-solid">ROI Calculator →</button>
@@ -362,25 +368,43 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
       <div class="prog-card">
         <div class="row"><a class="link-text" onclick="navigateToCourse('bca')">Online BCA ↗</a></div>
         <div class="row"><span><b>3 years</b>Duration</span><span><b>₹1,59,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
-        <div class="spec">2 specializations available</div>
+        <div class="spec">Specializations in Online BCA — Computer Application, Information Technology</div>
         <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
       </div>
       <div class="prog-card">
         <div class="row"><a class="link-text" onclick="navigateToCourse('mcom')">Online M.Com ↗</a></div>
         <div class="row"><span><b>2 years</b>Duration</span><span><b>₹96,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
-        <div class="spec">2 specializations available</div>
+        <div class="spec">Specializations in Online M.Com — Accounting &amp; Finance, Commerce</div>
         <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
       </div>
       <div class="prog-card">
         <div class="row"><a class="link-text" onclick="navigateToCourse('ma')">Online MA ↗</a></div>
         <div class="row"><span><b>2 years</b>Duration</span><span><b>₹76,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
-        <div class="spec">5 specializations available — English, Political Science, History, Sociology and more</div>
+        <div class="spec">Specializations in Online MA — English, History, Political Science, Sociology</div>
         <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
       </div>
       <div class="prog-card">
         <div class="row"><a class="link-text" onclick="navigateToCourse('mba')">Online MBA ↗</a></div>
         <div class="row"><span><b>2 years</b>Duration</span><span><b>₹1,86,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
-        <div class="spec">Multiple specializations available</div>
+        <div class="spec">Specializations in Online MBA — Business Analytics, Data Science, Marketing, Banking &amp; Finance and more</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('mca')">Online MCA ↗</a></div>
+        <div class="row"><span><b>2 years</b>Duration</span><span><b>₹1,40,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Specializations in Online MCA — Cyber Security, Data Science, Full Stack Development, AI &amp; ML and more</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('msc')">Online MSc ↗</a></div>
+        <div class="row"><span><b>2 years</b>Duration</span><span><b>₹74,666</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Specializations in Online MSc — Mathematics, Economics</div>
+        <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
+      </div>
+      <div class="prog-card">
+        <div class="row"><a class="link-text" onclick="navigateToCourse('diploma')">Online Diploma ↗</a></div>
+        <div class="row"><span><b>1 year</b>Duration</span><span><b>₹46,000</b>Fee range</span><span><b>Online</b>Mode</span></div>
+        <div class="spec">Specializations in Online Diploma — Business Administration, Computer Application</div>
         <div class="btns"><button class="btn btn-ghost">Brochure ↓</button><button class="btn btn-solid">Shortlist →</button></div>
       </div>
     </div>
@@ -393,11 +417,15 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
         <tr><td>Online M.Com</td><td>Bachelor's degree in Commerce or related field</td><td>Merit-based</td></tr>
         <tr><td>Online M.Sc (Mathematics)</td><td>Bachelor's degree with Mathematics</td><td>Merit-based</td></tr>
         <tr><td>Online M.Sc (Economics)</td><td>Bachelor's degree in Economics or related field</td><td>Merit-based</td></tr>
-        <tr><td>Online MA (English, Political Science, History, Sociology)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (English)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (History)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (Sociology)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA (Political Science)</td><td>Bachelor's degree in relevant discipline</td><td>Merit-based</td></tr>
         <tr><td>Online BBA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
         <tr><td>Online BCA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
         <tr><td>Online BA</td><td>Class 10 and Class 12 from a recognized board</td><td>Merit-based</td></tr>
       </tbody></table>
+
     </div>
 
     <div class="section-head" id="toc-admission"><div class="eyebrow">Admission</div><h2>LPU Online Admission Process 2026</h2><p>A simple and transparent process — admission is based on academic eligibility criteria specified for each programme. Candidates can apply without visiting the campus.</p></div>
@@ -437,7 +465,12 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
         <tr><td>Placement Support</td><td>Resume building, interview preparation, career counselling</td></tr>
         <tr><td>Placement Drives</td><td>Virtual and online recruitment drives</td></tr>
       </tbody></table>
-      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: statistics are based on available reports and may vary depending on the course, recruiter, and individual student performance.</p>
+      <div class="note-box"><span class="dot">ℹ️</span><span><b>Note:</b> statistics are based on available reports and may vary depending on the course, recruiter, and individual student performance.</span></div>
+      <h3>Hiring partners</h3>
+      <p>LPU Online has a strong network with over 2,225 global and domestic firms recruiting its graduates.</p>
+      <div class="badge-list">
+        <span class="badge chip">Amazon</span><span class="badge chip">TCS</span><span class="badge chip">HCL</span><span class="badge chip">Tech Mahindra</span><span class="badge chip">Infosys</span><span class="badge chip">Wipro</span><span class="badge chip">Accenture</span><span class="badge chip">Cognizant</span><span class="badge chip">Google</span><span class="badge chip">HP</span><span class="badge chip">Capgemini</span>
+      </div>
     </div>
 
     <div class="section-head" id="toc-scholarships"><div class="eyebrow">Scholarships</div><h2>LPU Online Scholarships</h2><p>LPU Online offers scholarship and fee support options to eligible students according to university norms.</p></div>
@@ -447,7 +480,7 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
         <tr><td>Student Grant</td><td>Fee concession offered on selected online programs (for example, around 20% grant on program fees)</td></tr>
         <tr><td>Alumni Fee Waiver</td><td>Additional 10% fee waiver available for LPU alumni enrolling in online programs</td></tr>
       </tbody></table>
-      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: Scholarship and fee benefits may vary by programme and admission cycle. Check the official LPU Online website for the latest details.</p>
+      <div class="note-box"><span class="dot">ℹ️</span><span><b>Note:</b> Scholarship and fee benefits may vary by programme and admission cycle. Check the official LPU Online website for the latest details.</span></div>
     </div>
 
     <div class="section-head" id="toc-campus"><div class="eyebrow">Campus</div><h2>LPU Online Campus</h2><p>LPU Online lets students study from any location without visiting the physical campus. The main campus of Lovely Professional University is located in Phagwara, Punjab, India.</p></div>
@@ -460,6 +493,14 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
     </div>
 
     <div class="section-head" id="toc-exam"><div class="eyebrow">Exams</div><h2>LPU Online Examination Pattern</h2><p>Lovely Professional University conducts examinations for its online courses through its digital learning platform. The evaluation system usually includes assignments, internal assessments, and end-term examinations to evaluate students' performance during the course.</p></div>
+    <div class="block">
+      <ol class="stepper">
+        <li><b>Semester-Based Structure</b> — Each programme follows a semester-based academic system.</li>
+        <li><b>Continuous Internal Assessment</b> — Evaluation is carried out through assignments, quizzes, and academic activities during the semester.</li>
+        <li><b>End-Semester Online Examination</b> — Online monitored examinations are conducted at the end of each semester.</li>
+        <li><b>Result Declaration</b> — Final results are declared after evaluation. Students meeting the criteria progress to the next semester.</li>
+      </ol>
+    </div>
 
     <div class="section-head" id="toc-degree"><div class="eyebrow">Degree</div><h2>LPU Online Sample Degree</h2><p>The LPU Online degree is recognized and approved by the UGC. It is considered valid for all government and private sector jobs, promotions, and for pursuing further studies in India and abroad. The degree represents the successful completion of the programme and the knowledge earned by the student.</p></div>
 
@@ -472,7 +513,7 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
         <tr><td>Admission Confirmation</td><td>After document verification and fee payment</td></tr>
         <tr><td>Programme Commencement</td><td>As per university schedule</td></tr>
       </tbody></table>
-      <p style="font-size:12px;color:var(--slate);margin-top:8px;">Note: Admission deadlines may vary depending on the course and intake cycle. Check the official LPU Online website for the latest updates.</p>
+      <div class="note-box"><span class="dot">ℹ️</span><span><b>Note:</b> Admission deadlines may vary depending on the course and intake cycle. Check the official LPU Online website for the latest updates.</span></div>
     </div>
 
     <div class="section-head" id="toc-reviews"><div class="eyebrow">Reviews</div><h2>LPU Online Reviews</h2></div>
@@ -609,12 +650,16 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
         <tr><td>Online BCA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
         <tr><td>Online M.Com</td><td>Bachelor's degree in Commerce/relevant field</td><td>Merit-based</td></tr>
         <tr><td>Online B.Com</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
-        <tr><td>Online MA (English / Economics / History / Sociology / Political Science)</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA English</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA Economics</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA History</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA Sociology</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
+        <tr><td>Online MA Political Science</td><td>Bachelor's degree in any discipline</td><td>Merit-based</td></tr>
         <tr><td>Online BA</td><td>10+2 from a recognised board</td><td>Merit-based</td></tr>
         <tr><td>Online M.Sc Mathematics</td><td>Bachelor's degree in Mathematics/relevant field</td><td>Merit-based</td></tr>
         <tr><td>DCA / DBA</td><td>10+2 from a recognised board</td><td class="hl">Direct Admission</td></tr>
       </tbody></table>
-      <p style="font-size:12px;color:var(--slate);margin-top:8px;">*Students for MCA without a Mathematics background must complete a bridge course.</p>
+      <div class="note-box"><span class="dot">✱</span><span>Students for MCA without a Mathematics background must complete a bridge course.</span></div>
     </div>
 
     <div class="block">
@@ -662,8 +707,8 @@ footer.site{background:var(--navy-deep);color:#c6cee6;margin-top:40px;padding:36
       </div>
     </div>
     <div class="review-grid" style="grid-template-columns:repeat(2,1fr);">
-      <div class="review-card"><div class="avatar">NG</div><p>"Login dashboard is simple — tracked my application and started classes a week after paying."</p><b>Neha Gupta</b><span>MCA, 2024 batch</span></div>
-      <div class="review-card"><div class="avatar">VS</div><p>"The whole process was paperless and fast — no campus visit at all."</p><b>Vikram Singh</b><span>B.Com, 2025 batch</span></div>
+      <div class="review-card"><div class="avatar">NG</div><p>"The LPU Online login dashboard is very simple to use. I can track my application status easily. The document verification was very fast. I started watching lectures just one week after paying. The teachers are very helpful."</p><b>Neha Gupta</b><span>MCA Student, 2024 Batch</span></div>
+      <div class="review-card"><div class="avatar">VS</div><p>"I applied for the LPU Online admission 2026 online. The whole process was paperless and fast. I did not have to visit the campus at all. The mobile app is great for studying. It fits my busy work schedule perfectly."</p><b>Vikram Singh</b><span>B.Com Student, 2025 Batch</span></div>
     </div>
   </section>
 
@@ -713,7 +758,22 @@ const COURSES = {
       ["LPU Alumni Grant","Previous LPU students (any programme) joining BA","10% fee waiver on the programme fee"],
       ["Single Girl Child Grant","Only girl child in the family (self-declaration required)","Up to 10% fee waiver on semester fees"]
     ],
-    rankings:[["UGC Entitlement","Entitled by University Grants Commission (UGC-DEB)"],["NAAC Accreditation","Highest Grade A++ (Score 3.68/4.0)"],["NIRF Ranking 2025","Ranked 31st among all universities in India"],["WURI Ranking 2024","Ranked 4th in India"],["QS World Rankings","Ranked 187th in Asia (2026 edition)"],["WES Recognition","Recognized by World Education Services (for Canada/USA)"],["Global Memberships","Member of AIU (India) and ACU (UK)"]]
+    rankings:[["UGC Entitlement","Entitled by University Grants Commission (UGC-DEB)"],["NAAC Accreditation","Highest Grade A++ (Score 3.68/4.0)"],["NIRF Ranking 2025","Ranked 31st among all universities in India"],["WURI Ranking 2024","Ranked 4th in India"],["QS World Rankings","Ranked 187th in Asia (2026 edition)"],["WES Recognition","Recognized by World Education Services (for Canada/USA)"],["Global Memberships","Member of AIU (India) and ACU (UK)"]],
+    feeVariants:[["General","3 year","₹1,08,000"],["Arts & Literature","3 year","₹1,20,000"]],
+    applySteps:[
+      ["Registration and Application Fee","Visit the official LPU Online website and click on the \"Apply Now\" button. Provide your name, email address, and mobile number, then pay the ₹600 LPU Online BA registration fee."],
+      ["Form Filling and Selection","Log in to your student dashboard, enter your personal and educational information, and pick your LPU Online BA electives like History, Political Science, or Sociology."],
+      ["Document Upload","Scan and upload your academic documents, identity proof, and passport-size photographs through the secure student portal for verification."],
+      ["Online BA Fee Payment","Pay the semester fee using the secure portal via UPI, net banking, or debit card. Eligible candidates can apply for the 20% student grant at this step."],
+      ["Enrollment and LMS Access","The LPU Online team reviews your documents. Expect a confirmation email shortly after document verification — once received, log into the LPU e-Connect portal and begin your classes."]
+    ],
+    faqs:[
+      ["Who can join LPU Online BA course?","Any candidate who has completed 10+2 from a recognized board, in any stream, can apply."],
+      ["How long is LPU Online BA course?","The programme runs for 3 years, spread across 6 semesters."],
+      ["Is the LPU Online BA degree valid for government jobs?","Yes, it is UGC-DEB approved and valid for government jobs, private sector roles, promotions and further studies."],
+      ["How do I study at LPU Online?","Through the LPU e-Connect LMS, with live and recorded lectures, digital study material, and online assignments and exams."],
+      ["How much is LPU Online BA fee?","The total fee ranges from ₹1,08,000 to ₹1,32,000 depending on electives, with additional grants and lumpsum discounts available."]
+    ]
   },
   mba:{
     name:"Online MBA", duration:"2 years", meta:"Merit-based", price:"₹2.00L total", tags:"Marketing · HR · Finance",
@@ -726,13 +786,33 @@ const COURSES = {
     scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1],["Alumni waiver — 10%",0]]
   },
   mca:{
-    name:"Online MCA", duration:"2 years", meta:"Maths required", price:"₹1.48L total", tags:"AI · Full-stack · Data",
-    highlights:[["Duration","2 years (4 semesters)"],["Mode","100% online"],["Eligibility","Bachelor's with Maths at 10/12/graduation"],["Entrance exam","Not required for most applicants"],["Fee range (total)","₹1,48,000"],["Average package","₹4.8 LPA"],["Highest package","Up to ₹9 LPA"]],
-    fees:[["Actual fee","₹37,000 / semester",0],["With 20% student grant","₹29,600 / semester",1],["Registration fee","₹600 (one-time)",0]],
-    note:"Students without a Maths background must complete a bridge course.",
+    name:"Online MCA", duration:"2 years", meta:"7 specializations", price:"₹1.40L total", tags:"Cyber Security · Data Science · Full Stack · AI & ML",
+    highlights:[["Duration","2 years (4 semesters)"],["Mode","100% online"],["Eligibility","BCA/B.Sc (CS/IT) or graduation with Maths at 10/12/graduation"],["Entrance exam","Not required for most applicants"],["Fee range (total)","₹1,40,000"],["Average package","₹4.8 LPA"],["Highest package","Up to ₹9 LPA"]],
+    fees:[["Actual fee","₹35,000 / semester",0],["With 20% student grant","₹28,000 / semester",1],["Registration fee","₹600 (one-time)",0]],
+    note:"Specializations available in Cyber Security, Data Science, Full Stack Development, AI & ML and more (7 total). Students without a Maths background must complete a bridge course.",
     eligibility:[["Qualification","BCA / B.Sc (CS/IT) or graduation with Maths"],["Minimum marks","50% aggregate"],["Bridge course","Required if no Maths background"]],
-    syllabus:[["Semester 1",["Programming Fundamentals","Data Structures","Discrete Mathematics"]],["Semester 2",["Database Management Systems","Operating Systems","Web Technologies"]],["Semester 3 & 4",["AI & Machine Learning","Full-stack Development","Capstone Project"]]],
+    syllabus:[["Semester 1",["Programming Fundamentals","Data Structures","Discrete Mathematics"]],["Semester 2",["Database Management Systems","Operating Systems","Web Technologies"]],["Semester 3 & 4",["Specialization electives (Cyber Security / Data Science / Full Stack / AI & ML)","Capstone Project"]]],
     placements:[["Average package","₹4.8 LPA",0],["Highest package","Up to ₹9 LPA",1],["Hiring partners","2,225+ companies",0]],
+    scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1]]
+  },
+  msc:{
+    name:"Online MSc", duration:"2 years", meta:"2 specializations", price:"₹74,666 total", tags:"Mathematics · Economics",
+    highlights:[["Duration","2 years (4 semesters)"],["Mode","100% online"],["Eligibility","Bachelor's degree with Mathematics or in Economics/related field"],["Entrance exam","Not required"],["Fee range (total)","₹74,666"],["Average package","₹3.0 – ₹5.0 LPA"],["Highest package","Up to ₹9 LPA"]],
+    fees:[["Actual fee","₹18,700 / semester (approx.)",0],["With 20% student grant","₹14,950 / semester (approx.)",1],["Registration fee","₹600 (one-time)",0]],
+    note:"Specializations available in Mathematics and Economics. Fee figures are computed from the published total; confirm exact per-semester billing with LPU Online.",
+    eligibility:[["Qualification (Mathematics)","Bachelor's degree with Mathematics"],["Qualification (Economics)","Bachelor's degree in Economics or related field"],["Minimum marks","50% aggregate"]],
+    syllabus:[["Semester 1 & 2",["Core subjects in chosen specialization","Research Methodology"]],["Semester 3 & 4",["Advanced electives","Dissertation / Term Paper"]]],
+    placements:[["Placement support","Resume building, interview preparation, career counselling",0],["Hiring partners","2,225+ companies",0]],
+    scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1]]
+  },
+  diploma:{
+    name:"Online Diploma", duration:"1 year", meta:"2 specializations", price:"₹46,000 total", tags:"Business Administration · Computer Application",
+    highlights:[["Duration","1 year (2 semesters)"],["Mode","100% online"],["Eligibility","10+2 from a recognized board"],["Entrance exam","Not required"],["Fee range (total)","₹46,000"]],
+    fees:[["Actual fee","₹23,000 / semester",0],["With 20% student grant","₹18,400 / semester",1],["Registration fee","₹600 (one-time)",0]],
+    note:"Specializations available in Business Administration and Computer Application. Detailed placement figures for the Diploma track are not separately published — general LPU Online placement support applies.",
+    eligibility:[["Qualification","10+2 from a recognized board"],["Minimum marks","As per general LPU Online UG/Diploma norms"]],
+    syllabus:[["Semester 1",["Core diploma modules — Business Administration or Computer Application track"]],["Semester 2",["Practical training","Capstone / project work"]]],
+    placements:[["Placement support","Resume building, interview preparation, career counselling",0],["Hiring partners","100+ partner companies",0]],
     scholarships:[["Early Bird Grant — 20%",1],["Jai Jawan — 100% waiver",1]]
   },
   bba:{
@@ -800,6 +880,9 @@ function renderCourseDetail(slug){
   const schBadges = c.scholarships.map(s=>`<span class="badge ${s[1]===1?'green':'chip'}">${s[0]}</span>`).join('');
   const rankingsBlock = c.rankings ? `<div class="block"><h3>Rankings & accreditations</h3><table class="data"><thead><tr><th>Particulars</th><th>Details</th></tr></thead><tbody>${rows(c.rankings)}</tbody></table></div>` : '';
   const scholarshipsTableBlock = c.scholarshipTable ? `<h3>Scholarship details</h3><table class="data"><thead><tr><th>Grant category</th><th>Eligibility</th><th>Benefit</th></tr></thead><tbody>${c.scholarshipTable.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</tbody></table>` : '';
+  const feeVariantsBlock = c.feeVariants ? `<div class="course-grid" style="grid-template-columns:repeat(2,1fr);margin-top:10px;">${c.feeVariants.map(v=>`<div class="course-card" style="cursor:default;"><div class="row"><b>${v[0]}</b></div><div class="meta">${v[1]} Duration</div><div class="price">${v[2]} Fee range</div></div>`).join('')}</div>` : '';
+  const applyStepsBlock = c.applySteps ? `<div class="block"><h3>How to apply</h3><ol class="stepper">${c.applySteps.map(s=>`<li><b>${s[0]}</b> — ${s[1]}</li>`).join('')}</ol></div>` : '';
+  const faqsBlock = c.faqs ? `<div class="faq-section" style="margin-top:22px;"><div class="section-head"><div class="eyebrow">Help</div><h2>${c.name} FAQs</h2></div>${c.faqs.map(f=>`<div class="faq-item"><button class="faq-q">${f[0]}<span class="plus">+</span></button><div class="faq-a">${f[1]}</div></div>`).join('')}</div>` : '';
 
   return `
     <a class="back-link" id="back-to-courses">← All courses</a>
@@ -808,11 +891,13 @@ function renderCourseDetail(slug){
       <div class="badge-list" style="margin:0;"><span class="badge chip">${c.duration}</span><span class="badge chip">${c.meta}</span></div>
     </div>
     <div class="block"><h3>Highlights</h3><table class="data"><thead><tr><th>Particular</th><th>Detail</th></tr></thead><tbody>${rows(c.highlights)}</tbody></table></div>
-    <div class="block"><h3>Fee breakdown & grants</h3><table class="data"><thead><tr><th>Fee component</th><th>Amount</th></tr></thead><tbody>${feeRows}</tbody></table><p style="font-size:12.5px;color:var(--slate);">${c.note}</p></div>
+    <div class="block"><h3>Fee breakdown & grants</h3><table class="data"><thead><tr><th>Fee component</th><th>Amount</th></tr></thead><tbody>${feeRows}</tbody></table><div class="note-box"><span class="dot">ℹ️</span><span>${c.note}</span></div>${feeVariantsBlock}</div>
     <div class="block"><h3>Eligibility criteria</h3><table class="data"><thead><tr><th>Criteria</th><th>Detail</th></tr></thead><tbody>${eligRows}</tbody></table></div>
+    ${applyStepsBlock}
     <div class="block"><h3>Semester-wise syllabus</h3>${semItems}</div>
     <div class="block"><h3>Placement</h3><table class="data"><thead><tr><th>Metric</th><th>Detail</th></tr></thead><tbody>${placeRows}</tbody></table><h3>Scholarships</h3><div class="badge-list">${schBadges}</div>${scholarshipsTableBlock}</div>
     ${rankingsBlock}
+    ${faqsBlock}
   `;
 }
 
@@ -835,6 +920,7 @@ function navigateToCourse(slug){
   dv.innerHTML = renderCourseDetail(slug);
   document.getElementById('back-to-courses').addEventListener('click', showCourseList);
   bindSemToggles();
+  bindFaqToggles(dv);
   location.hash = '#courses/'+slug;
   window.scrollTo({top:0,behavior:'instant'});
 }
@@ -849,6 +935,16 @@ function showCourseList(){
 function bindSemToggles(){
   document.querySelectorAll('.sem-item').forEach(item=>{
     item.querySelector('.sem-q').addEventListener('click', ()=> item.classList.toggle('open'));
+  });
+}
+
+function bindFaqToggles(scope){
+  scope.querySelectorAll('.faq-item').forEach(item=>{
+    item.querySelector('.faq-q').addEventListener('click', ()=>{
+      const wasOpen = item.classList.contains('open');
+      item.parentElement.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen) item.classList.add('open');
+    });
   });
 }
 
